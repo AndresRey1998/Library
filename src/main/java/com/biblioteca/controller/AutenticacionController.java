@@ -20,7 +20,7 @@ import java.security.spec.InvalidKeySpecException;
 
 @RestController
 @RequestMapping("/autenticacion")
-@CrossOrigin(origins = {"http://localhost:8081/", "https://chibchaweb.vercel.app/", "https://hancockbooks.herokuapp.com/" } ,maxAge = 3600, methods={RequestMethod.GET,RequestMethod.OPTIONS,RequestMethod.PATCH,RequestMethod.POST,RequestMethod.DELETE,RequestMethod.HEAD,})
+@CrossOrigin(origins = {"http://localhost:8081/", "https://hancockbooks-front.herokuapp.com/", "https://hancockbooks.herokuapp.com/" } ,maxAge = 3600, methods={RequestMethod.GET,RequestMethod.OPTIONS,RequestMethod.PATCH,RequestMethod.POST,RequestMethod.DELETE,RequestMethod.HEAD,})
 public class AutenticacionController {
     @Autowired
     private AuthenticationManager authenticationManager;
